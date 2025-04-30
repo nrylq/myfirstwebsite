@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>myfirstwebpage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+                background-color: linen;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .title-image {
+                width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+            }
+            .content-section {
+                text-align: center;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                margin-top: 0;
+            }
+            h2 {
+                color: #000;
+                font-size: 24px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            .show-btn {
+                text-align: center;
+            }
+            .show-btn.disabled {
+                pointer-events: none;
+            }
+            .show-btn button {
+                padding: 12px 24px;
+                background: #27ae60;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                border-radius: 3px;
+                color: #f2f2f2;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            .show-btn button:hover {
+                background: #26a65b;
+            }
+            .modal {
+                position: fixed;
+                right: 0;
+                opacity: 0;
+                bottom: -100%;
+                width: 100%;
+                transition: bottom 0.4s, opacity 0.4s;
+                box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+                z-index: 1000;
+            }
+            .modal.show {
+                bottom: 0;
+                opacity: 1;
+            }
+            .modal .top-content {
+                background: #34495e;
+                width: 100%;
+                padding: 0 0 30px 0;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+            .top-content .close-icon {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 23px;
+                color: silver;
+                cursor: pointer;
+            }
+            .close-icon:hover {
+                color: #b6b6b6;
+            }
+            .modal .bottom-content {
+                background: white;
+                width: 100%;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+            .bottom-content .text {
+                font-size: 28px;
+                font-weight: 600;
+                color: #34495e;
+                text-align: center;
+                padding: 20px;
+            }
+            .bottom-content p {
+                font-size: 18px;
+                line-height: 27px;
+                color: grey;
+                margin: 20px;
+            }
+            .bottom-content .close-btn {
+                padding: 20px 0;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .close-btn button {
+                padding: 12px 24px;
+                background: #27ae60;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                text-transform: uppercase;
+                border-radius: 3px;
+                color: #f2f2f2;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            .close-btn button:hover {
+                background: #26a65b;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>"Activity 3 in DCIT21"</h1>
+            <img src="images/title.jpg" alt="Title Image" class="title-image">
+            <div class="content-section">
+                <h2>Hi! I'm Andrea Longcop from BSIT and this is my first webpage about why did I choose IT and my future in IT industry.</h2>
+                <div class="show-btn">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="top-content">
+                    <span class="close-icon"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="bottom-content">
+                    <div class="text">Why did I choose IT?</div>
+                    <p>
+                        Hi, I choose IT 'cause, first let me share my journey about choosing my dream. It's kinda impossible and weird but I'm gonna share it. When I was in my fourth year of high school I feel like I wanted to create an app that saves the lives of other people, in our country, there are a lot of cases where the most woman died caused by raped, sexual assault, and kidnapping. At that time I asked, How about an app that helps people most of all women in dangerous situations? an app that can use offline, an app that can easily track locations, an app that can record audio or video, and an app that can easily contact the police department, How about? I know that the idea is impossible because I'm just fifteen years old, like how can I make that app? but in that idea, I prefer to choose IT maybe I'll learn how to, and maybe I'll create that app in another way? and that's the first thing why I choose IT. But now I know there is already an app on the cellphone or they already invented that idea. Thankful but I'm not satisfied. In my senior high school journey, I learn some pieces of stuff about a computer, they teach me about ICT, acronyms, a list of HTML tags, coding symbol names, coding, programming languages, and many more that's all I remember I forgot others hehe. 
+                        During that journey, I find myself more interested in computers. I feel like I'm gonna fit in this industry because honestly I don't like cooking but we have a food business which is cassava cake, . but well my mother always says to me that " always choose what your heart wants. " and that's the last thing why I choose IT.  
+                    </p>
+                    <div class="text">My Future in IT Industry</div>
+                    <p>
+                        Honestly, I don't know what future I'll have in the IT industry, and I don't know how to convince myself I sometimes question myself " I'll make it through this? " because I have that low self-esteem other people find me shy and slow learner, that's right but this quotes inspired me and continue believing in what myself can do. " So if you have a dream then just believe that you can achieve it no matter what. Even when you can't feel deep in your heart any words of encouragement, just believe in your dream and your heart will finally show you the way." ( - Shuchi Gupta ) 
+
+                        Even though I don't know what I'm going to do but I believe in what I can do. I always believe that I'm gonna make it in another way, I always believe that I'm going to be soon an Application Developer, or IT Security Specialist.
+                    </p>
+                    <div class="close-btn">
+                        <button>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script>
+            $('.show-btn').click(function(){
+                $('.modal').toggleClass("show");
+                $('.show-btn').addClass("disabled");
+            });
+            $('.close-icon').click(function(){
+                $('.modal').toggleClass("show");
+                $('.show-btn').removeClass("disabled");
+            });
+            $('.close-btn').click(function(){
+                $('.modal').toggleClass("show");
+                $('.show-btn').removeClass("disabled");
+            });
+        </script>
+    </body>
+</html>
